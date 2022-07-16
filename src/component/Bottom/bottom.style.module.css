@@ -1,0 +1,27 @@
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 26px;
+    overflow-y: scroll;
+    border-radius: 20px;
+
+}.item{
+    max-width: 100%;
+    padding: 5px 6px;
+    background-color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+.item>button{
+    padding: 4px 10px;
+    max-width: 76px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}

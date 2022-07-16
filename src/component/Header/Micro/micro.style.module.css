@@ -1,0 +1,44 @@
+.micro{
+    background-color: aqua;
+    display: flex;
+    max-height: 100px;
+    min-width:100px;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}.micro>i{
+
+        display:inline;
+        font-size: 40px;
+        margin: 0 auto;
+
+}
+.active>i{
+    display:inline;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.active{
+    background-color: aqua;
+    display: flex;
+    max-height: 100px;
+    min-width:100px;
+    justify-content: center;
+    align-items: center;
+    padding: 23px;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: up .8s linear infinite;
+}
+@keyframes up {
+    0%{
+       opacity: 0.2;
+        
+    }100%{
+        opacity: 1;
+    }
+}
