@@ -1,14 +1,16 @@
 import React from 'react'
 import Style from './bottom.style.module.css';
-import { data } from './bot.props';
+
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 
 function Bottom() {
   const [state,setState] = useState([]);
+  const selector = useSelector(state => state.items.arr);
   useEffect(()=>{
-       setState(data)
+       setState(selector)
   },[])
   return (
     <div className={Style.bottom}>
