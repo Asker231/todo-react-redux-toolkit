@@ -2,10 +2,9 @@
   background-color: blueviolet;
   width: 100vw;
   height: 100vh;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 600px;
-  grid-template-rows: 200px 500px;
+  gap: 70px;
+   display:flex;
+   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 100px 15px;
