@@ -14,13 +14,12 @@ function Micro() {
     <div className={state ? Style.micro : Style.active}
     onClick={() => {
           setState(prev => !prev)
-          setMicro(micro=>!micro)
-          
+          setMicro(micro=>!micro)      
         }
     }
     onMouseDown={()=>{
-       micro? SpeechRecognition.startListening({continues:true}):SpeechRecognition.stopListening()
-       dispatch(addItem(transcript))
+       micro? SpeechRecognition.startListening({continuous:true}):SpeechRecognition.stopListening()
+       dispatch(addItem({transcript}))
     }}
     >
       <i  class="fa-solid fa-microphone"></i>

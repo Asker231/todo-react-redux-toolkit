@@ -10,6 +10,7 @@ const todoSlice = createSlice({
     },reducers:{
         addItem(state,action){
             state.arr.push(action.payload.transcript)
+            console.log(action.payload.transcript)
         }
     }
 })

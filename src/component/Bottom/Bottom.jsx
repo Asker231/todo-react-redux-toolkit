@@ -7,16 +7,14 @@ import { useSelector } from 'react-redux';
 
 
 function Bottom() {
-  const [state,setState] = useState([]);
+
   const selector = useSelector(state => state.items.arr);
-  useEffect(()=>{
-       setState(selector)
-  },[])
+
   return (
     <div className={Style.bottom}>
          {
-          state.map((el)=>{
-            return <div className={Style.item}>{el.todo} <button>Delete</button></div>
+          selector.map((el)=>{
+            return <div className={Style.item}>{el} <button>Delete</button></div>
           })
          }
     </div>
